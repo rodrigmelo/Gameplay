@@ -5,6 +5,7 @@ import { Text, View, ScrollView, KeyboardAvoidingView } from 'react-native';
 import { Platform } from 'react-native';
 import uuid from 'react-native-uuid';
 import { useNavigation } from '@react-navigation/native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import { Background } from '../../components/Background';
 import { Button } from '../../components/Button';
@@ -22,7 +23,7 @@ import { COLLECTION_APPOINTMENTS } from '../../config/database'
 
 import { theme } from '../../global/styles/theme';
 import { styles } from './styles'
-import AsyncStorage from '@react-native-async-storage/async-storage';
+
 
 export function AppointmentCreate() {
 
